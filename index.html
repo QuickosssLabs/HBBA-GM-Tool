@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBBA GM Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>HBBA GM Tool</h1>
+    
+    <!-- Load image -->
+    <input type="file" id="imageLoader" accept="image/*"><br><br>
+
+    <!-- Overlay Selection -->
+    <div id="overlayMenu">
+        <h3>Choose a matching color :</h3>
+        <div class="overlay-container">
+            <img class="overlay-option" src="images/hbba/overlay1.png" alt="Overlay 1" width="100" onclick="selectOverlay('images/hbba/overlay1.png')">
+            <div class="overlay-name">GM Blue Fur</div>
+        </div>
+        <div class="overlay-container">
+            <img class="overlay-option" src="images/hbba/overlay2.png" alt="Overlay 2" width="100" onclick="selectOverlay('images/hbba/overlay2.png')">
+            <div class="overlay-name">GM Coral Reef Fur</div>
+        </div>
+        <div class="overlay-container">
+            <img class="overlay-option" src="images/hbba/overlay3.png" alt="Overlay 3" width="100" onclick="selectOverlay('images/hbba/overlay3.png')">
+            <div class="overlay-name">GM Fiery Red Fur</div>
+        </div>
+        <div class="overlay-container">
+            <img class="overlay-option" src="images/hbba/overlay4.png" alt="Overlay 4" width="100" onclick="selectOverlay('images/hbba/overlay4.png')">
+            <div class="overlay-name">GM Geometric Diamond Fur</div>
+        </div>
+        <div class="overlay-container">
+            <img class="overlay-option" src="images/hbba/overlay5.png" alt="Overlay 5" width="100" onclick="selectOverlay('images/hbba/overlay5.png')">
+            <div class="overlay-name">GM Gold Fur</div>
+        </div>
+        <div class="overlay-container">
+            <img class="overlay-option" src="images/hbba/overlay6.png" alt="Overlay 6" width="100" onclick="selectOverlay('images/hbba/overlay6.png')">
+            <div class="overlay-name">GM Golden Brown Fur</div>
+        </div>
+        <div class="overlay-container">
+            <img class="overlay-option" src="images/hbba/overlay7.png" alt="Overlay 7" width="100" onclick="selectOverlay('images/hbba/overlay7.png')">
+            <div class="overlay-name">GM Green Fur</div>
+        </div>
+        <div class="overlay-container">
+            <img class="overlay-option" src="images/hbba/overlay8.png" alt="Overlay 8" width="100" onclick="selectOverlay('images/hbba/overlay8.png')">
+            <div class="overlay-name">GM Groovy Stripes Fur</div>
+        </div>
+        <div class="overlay-container">
+            <img class="overlay-option" src="images/hbba/overlay9.png" alt="Overlay 9" width="100" onclick="selectOverlay('images/hbba/overlay9.png')">
+            <div class="overlay-name">GM Hemp Fur</div>
+        </div>
+        <div class="overlay-container">
+            <img class="overlay-option" src="images/hbba/overlay10.png" alt="Overlay 10" width="100" onclick="selectOverlay('images/hbba/overlay10.png')">
+            <div class="overlay-name">GM Polka Dots Fur</div>
+        </div>
+        <div class="overlay-container">
+            <img class="overlay-option" src="images/hbba/overlay11.png" alt="Overlay 11" width="100" onclick="selectOverlay('images/hbba/overlay11.png')">
+            <div class="overlay-name">GM Sea Blue Fur</div>
+        </div>
+        <div class="overlay-container">
+            <img class="overlay-option" src="images/hbba/overlay12.png" alt="Overlay 12" width="100" onclick="selectOverlay('images/hbba/overlay12.png')">
+            <div class="overlay-name">GM Silver Grey Fur</div>
+        </div>
+        <div class="overlay-container">
+            <img class="overlay-option" src="images/hbba/overlay13.png" alt="Overlay 13" width="100" onclick="selectOverlay('images/hbba/overlay13.png')">
+            <div class="overlay-name">GM Soft Lavender Fur</div>
+        </div>
+        <div class="overlay-container">
+            <img class="overlay-option" src="images/hbba/overlay14.png" alt="Overlay 14" width="100" onclick="selectOverlay('images/hbba/overlay14.png')">
+            <div class="overlay-name">GM Tie-Dye Fur</div>
+        </div>
+        <div class="overlay-container">
+            <img class="overlay-option" src="images/hbba/overlay15.png" alt="Overlay 15" width="100" onclick="selectOverlay('images/hbba/overlay15.png')">
+            <div class="overlay-name">GM White Fur</div>
+        </div>
+        <div class="overlay-container">
+            <img class="overlay-option" src="images/hbba/overlay16.png" alt="Overlay 16" width="100" onclick="selectOverlay('images/hbba/overlay16.png')">
+            <div class="overlay-name">GM Zebra Fur</div>
+        </div>
+    </div>
+    
+    <!-- Adjust Overlay -->
+    <div class="controls">
+        <label for="overlaySize">Overlay Size :</label>
+        <input type="range" id="overlaySize" min="10" max="200" value="100">
+        
+        <label for="overlayInsetX">Inset X :</label>
+        <input type="range" id="overlayInsetX" min="-800" max="200" value="0">
+        
+        <label for="overlayInsetY">Inset Y :</label>
+        <input type="range" id="overlayInsetY" min="-800" max="200" value="0">
+    </div>
+    
+    <!--Canvas Zone -->
+    <div id="canvasContainer">
+        <canvas id="imageCanvas"></canvas>
+    </div>
+    
+    <!-- Download Btn -->
+    <button id="downloadBtn">Download</button>
+
+    <!-- Footer -->
+    <footer>
+        <a href="https://opensea.io/collection/hippie-based-bored-apes-1">See The HBBA collection on Opensea</a>
+        <p>GM Tool created by <a href="https://twitter.com/0x_Quickosss" target="_blank">Quickosss</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
